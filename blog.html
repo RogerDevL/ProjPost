@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/responsabilidade.png" type="image/x-icon">
+    <title>Garver</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+        body {
+            background-color: darkgray;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .buttons-container {
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: black;
+            width: 100%;
+            height: 70px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background-color: #222831;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+            margin-left: 50px;
+            margin-right: 50px;
+            height: 40px;
+            font-family: "Radio Canada Big", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+        a {
+            color: aliceblue;
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .botoes:hover{
+            background-color:rgba(128, 128, 128, 0.692);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        #button{
+            margin-right: 900px;
+            margin-left: 200px;
+        }
+        .principal{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+            margin-top: 20px;
+            width: 40%;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .title{
+            font-family: "Oswald", sans-serif;
+            color: white;
+            
+        }
+        .content{
+            font-family: "Montserrat", sans-serif;
+            color: white;
+        }
+        .image{
+            margin-top: 200px;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        }
+        .botoes-current{
+            margin-top: 200%;
+            color: white;
+            margin-bottom: 20%;
+        }
+        .post{
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="feed">
+
+    </div>
+    <div class="buttons-container">
+        <img src="img/Garver 1.png" alt="" width="200px" height="80px">
+        <button id="button" class="pri botoes"><a href="postagem.html">Publicar</a></button>
+        <button class="seg botoes"><a href="login.html">Conecte-se</a></button>
+        <button class="ter botoes"><a href="cadastro.html">Cadastrar</a></button>
+    </div>
+    <div class="principal">
+        <div class="title" id="title"></div>
+        <div class="content" id="content"></div>
+        <div class="image" id="image"><img src="" alt=""></div>
+        <div class="botoes-current">
+        <input type="submit" value="Submit" id="btn-next" >
+    </div>
+    </div>
+
+    
+    <script src="blog.js"></script>
+</body>
+</html>
